@@ -9,31 +9,35 @@
 /* Begin PBXBuildFile section */
 		151E70572940D970000F9ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E70562940D970000F9ED0 /* AppDelegate.swift */; };
 		151E70592940D970000F9ED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E70582940D970000F9ED0 /* SceneDelegate.swift */; };
-		151E705B2940D970000F9ED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E705A2940D970000F9ED0 /* ViewController.swift */; };
-		151E705E2940D970000F9ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151E705C2940D970000F9ED0 /* Main.storyboard */; };
 		151E70602940D971000F9ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151E705F2940D971000F9ED0 /* Assets.xcassets */; };
 		151E70632940D971000F9ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151E70612940D971000F9ED0 /* LaunchScreen.storyboard */; };
 		151E706B2940D98C000F9ED0 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E706A2940D98C000F9ED0 /* Server.swift */; };
-		151E706D2941F990000F9ED0 /* DealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151E706C2941F990000F9ED0 /* DealCell.xib */; };
-		151E706F2941FC75000F9ED0 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E706E2941FC75000F9ED0 /* DealCell.swift */; };
-		155E2E082942CF470094E5DA /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155E2E062942CF470094E5DA /* HeaderCell.xib */; };
-		155E2E092942CF470094E5DA /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E2E072942CF470094E5DA /* HeaderCell.swift */; };
+		8D5B8D062990605D0060E3DB /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B8D052990605D0060E3DB /* DealsViewController.swift */; };
+		8D5B8D08299060BB0060E3DB /* DealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B8D07299060BB0060E3DB /* DealsView.swift */; };
+		8D5B8D0E299171600060E3DB /* DealsCompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B8D0D299171600060E3DB /* DealsCompositionalLayout.swift */; };
+		8D5B8D10299173500060E3DB /* DealsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B8D0F299173500060E3DB /* DealsCell.swift */; };
+		8DBCE32A2993F48200A48CB7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE3292993F48200A48CB7 /* HeaderView.swift */; };
+		8DBCE32D2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE32C2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift */; };
+		8DBCE331299506E300A48CB7 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE330299506E300A48CB7 /* CALayer+Extension.swift */; };
+		8DBCE3332995093100A48CB7 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE3322995093100A48CB7 /* FontSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		151E70532940D970000F9ED0 /* TemplateOfDealsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateOfDealsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151E70562940D970000F9ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		151E70582940D970000F9ED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		151E705A2940D970000F9ED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		151E705D2940D970000F9ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		151E705F2940D971000F9ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151E70622940D971000F9ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151E70642940D971000F9ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151E706A2940D98C000F9ED0 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
-		151E706C2941F990000F9ED0 /* DealCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealCell.xib; sourceTree = "<group>"; };
-		151E706E2941FC75000F9ED0 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
-		155E2E062942CF470094E5DA /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
-		155E2E072942CF470094E5DA /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		8D5B8D052990605D0060E3DB /* DealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
+		8D5B8D07299060BB0060E3DB /* DealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsView.swift; sourceTree = "<group>"; };
+		8D5B8D0D299171600060E3DB /* DealsCompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsCompositionalLayout.swift; sourceTree = "<group>"; };
+		8D5B8D0F299173500060E3DB /* DealsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsCell.swift; sourceTree = "<group>"; };
+		8DBCE3292993F48200A48CB7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8DBCE32C2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuplementaryViewsIdentifiers.swift; sourceTree = "<group>"; };
+		8DBCE330299506E300A48CB7 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		8DBCE3322995093100A48CB7 /* FontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,18 +72,60 @@
 			children = (
 				151E70562940D970000F9ED0 /* AppDelegate.swift */,
 				151E70582940D970000F9ED0 /* SceneDelegate.swift */,
-				151E705A2940D970000F9ED0 /* ViewController.swift */,
-				151E705C2940D970000F9ED0 /* Main.storyboard */,
+				8D5B8D0A299170E00060E3DB /* Controller */,
+				8D5B8D0B299170EA0060E3DB /* View */,
+				8D5B8D09299170DA0060E3DB /* Model */,
+				8DBCE32B2993F48800A48CB7 /* SuplementaryViews */,
+				8D5B8D0C2991712A0060E3DB /* Utilities */,
 				151E705F2940D971000F9ED0 /* Assets.xcassets */,
 				151E70612940D971000F9ED0 /* LaunchScreen.storyboard */,
 				151E70642940D971000F9ED0 /* Info.plist */,
-				151E706A2940D98C000F9ED0 /* Server.swift */,
-				151E706C2941F990000F9ED0 /* DealCell.xib */,
-				151E706E2941FC75000F9ED0 /* DealCell.swift */,
-				155E2E072942CF470094E5DA /* HeaderCell.swift */,
-				155E2E062942CF470094E5DA /* HeaderCell.xib */,
 			);
 			path = TemplateOfDealsViewer;
+			sourceTree = "<group>";
+		};
+		8D5B8D09299170DA0060E3DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				151E706A2940D98C000F9ED0 /* Server.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D5B8D0A299170E00060E3DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B8D052990605D0060E3DB /* DealsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D5B8D0B299170EA0060E3DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B8D07299060BB0060E3DB /* DealsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D5B8D0C2991712A0060E3DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B8D0D299171600060E3DB /* DealsCompositionalLayout.swift */,
+				8DBCE330299506E300A48CB7 /* CALayer+Extension.swift */,
+				8DBCE3322995093100A48CB7 /* FontSize.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8DBCE32B2993F48800A48CB7 /* SuplementaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				8DBCE3292993F48200A48CB7 /* HeaderView.swift */,
+				8D5B8D0F299173500060E3DB /* DealsCell.swift */,
+				8DBCE32C2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift */,
+			);
+			path = SuplementaryViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +138,7 @@
 				151E704F2940D970000F9ED0 /* Sources */,
 				151E70502940D970000F9ED0 /* Frameworks */,
 				151E70512940D970000F9ED0 /* Resources */,
+				8D5B8D0429905F6B0060E3DB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -140,41 +187,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151E706D2941F990000F9ED0 /* DealCell.xib in Resources */,
 				151E70632940D971000F9ED0 /* LaunchScreen.storyboard in Resources */,
 				151E70602940D971000F9ED0 /* Assets.xcassets in Resources */,
-				151E705E2940D970000F9ED0 /* Main.storyboard in Resources */,
-				155E2E082942CF470094E5DA /* HeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D5B8D0429905F6B0060E3DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, use command 'brew install swiftlint'\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		151E704F2940D970000F9ED0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151E706F2941FC75000F9ED0 /* DealCell.swift in Sources */,
-				151E705B2940D970000F9ED0 /* ViewController.swift in Sources */,
-				155E2E092942CF470094E5DA /* HeaderCell.swift in Sources */,
+				8D5B8D062990605D0060E3DB /* DealsViewController.swift in Sources */,
+				8DBCE32D2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift in Sources */,
 				151E70572940D970000F9ED0 /* AppDelegate.swift in Sources */,
+				8D5B8D10299173500060E3DB /* DealsCell.swift in Sources */,
 				151E706B2940D98C000F9ED0 /* Server.swift in Sources */,
+				8D5B8D0E299171600060E3DB /* DealsCompositionalLayout.swift in Sources */,
+				8D5B8D08299060BB0060E3DB /* DealsView.swift in Sources */,
 				151E70592940D970000F9ED0 /* SceneDelegate.swift in Sources */,
+				8DBCE331299506E300A48CB7 /* CALayer+Extension.swift in Sources */,
+				8DBCE32A2993F48200A48CB7 /* HeaderView.swift in Sources */,
+				8DBCE3332995093100A48CB7 /* FontSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		151E705C2940D970000F9ED0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				151E705D2940D970000F9ED0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		151E70612940D971000F9ED0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -236,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -305,23 +367,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9K9C6RY6JG;
+				DEVELOPMENT_TEAM = 7QM3B3CVCZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TemplateOfDealsViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ntprog.TemplateOfDealsViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vega.TemplateOfDealsViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,23 +397,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9K9C6RY6JG;
+				DEVELOPMENT_TEAM = 7QM3B3CVCZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TemplateOfDealsViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ntprog.TemplateOfDealsViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vega.TemplateOfDealsViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
