@@ -26,9 +26,9 @@ final class DealsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        subscribeToServer()
         navigationItem.leftBarButtonItem = dealsView.upDownDealsBarButton
         navigationItem.rightBarButtonItem = dealsView.sortBarButton
+        subscribeToServer()
     }
 }
 

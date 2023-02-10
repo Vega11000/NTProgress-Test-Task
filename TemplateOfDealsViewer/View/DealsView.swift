@@ -122,10 +122,9 @@ private extension DealsView {
             sortBarButton.title = SortFields.side.rawValue
             dealsList.sort { $0.sideSortOrder < $1.sideSortOrder }
         case .none:
-            if upDeals {
-                break
+            if !upDeals {
+                dealsList.reverse()
             }
-            dealsList.reverse()
         }
         
         if upDeals {
