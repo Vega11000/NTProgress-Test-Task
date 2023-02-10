@@ -11,13 +11,14 @@ final class DealsView: UIView {
     
     var dealsList: [Deal] = []
     private var upDeals = false
-    private var sortFieldState: SortFields?
+    private var sortFieldState = SortFields.date
     
     private enum SortFields: String, CaseIterable {
         case instrument = "Instrument"
         case price = "Price"
         case amount = "Amount"
         case side = "Side"
+        case date = "Date"
     }
     
     let collectionView = UICollectionView(
@@ -55,7 +56,6 @@ final class DealsView: UIView {
     lazy var sortBarButton: UIBarButtonItem = {
         let barItem = UIBarButtonItem()
         barItem.menu = sortMenu
-        barItem.title = "Sort by"
         return barItem
     }()
     
@@ -63,6 +63,7 @@ final class DealsView: UIView {
         super.init(frame: .zero)
         prepareCollectionView()
         configureRefreshControl()
+        sortDealsList()
     }
     
     @available(*, unavailable)
@@ -121,10 +122,9 @@ private extension DealsView {
         case .side:
             sortBarButton.title = SortFields.side.rawValue
             dealsList.sort { $0.sideSortOrder < $1.sideSortOrder }
-        case .none:
-            if !upDeals {
-                dealsList.reverse()
-            }
+        case .date:
+            sortBarButton.title = SortFields.date.rawValue
+            dealsList.sort { $0.dateModifier < $1.dateModifier }
         }
         
         if upDeals {
