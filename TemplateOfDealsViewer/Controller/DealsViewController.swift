@@ -10,12 +10,7 @@ import UIKit
 final class DealsViewController: UIViewController {
 
     private let server = Server()
-    
-    private lazy var dealsView: DealsView = {
-        let view = DealsView()
-        view.viewDelegate = self
-        return view
-    }()
+    private let dealsView = DealsView()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -32,10 +27,10 @@ final class DealsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         subscribeToServer()
+        navigationItem.leftBarButtonItem = dealsView.upDownDealsBarButton
+        navigationItem.rightBarButtonItem = dealsView.sortBarButton
     }
 }
-
-extension DealsViewController: DealsViewDelegate {}
 
 private extension DealsViewController {
     func subscribeToServer() {

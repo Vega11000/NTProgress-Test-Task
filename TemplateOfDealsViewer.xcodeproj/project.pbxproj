@@ -16,6 +16,7 @@
 		8D5B8D08299060BB0060E3DB /* DealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B8D07299060BB0060E3DB /* DealsView.swift */; };
 		8D5B8D0E299171600060E3DB /* DealsCompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B8D0D299171600060E3DB /* DealsCompositionalLayout.swift */; };
 		8D5B8D10299173500060E3DB /* DealsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B8D0F299173500060E3DB /* DealsCell.swift */; };
+		8D7D1E012996A870007F4BA2 /* Deal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D1E002996A870007F4BA2 /* Deal+Extension.swift */; };
 		8DBCE32A2993F48200A48CB7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE3292993F48200A48CB7 /* HeaderView.swift */; };
 		8DBCE32D2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE32C2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift */; };
 		8DBCE331299506E300A48CB7 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCE330299506E300A48CB7 /* CALayer+Extension.swift */; };
@@ -34,6 +35,7 @@
 		8D5B8D07299060BB0060E3DB /* DealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsView.swift; sourceTree = "<group>"; };
 		8D5B8D0D299171600060E3DB /* DealsCompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsCompositionalLayout.swift; sourceTree = "<group>"; };
 		8D5B8D0F299173500060E3DB /* DealsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsCell.swift; sourceTree = "<group>"; };
+		8D7D1E002996A870007F4BA2 /* Deal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deal+Extension.swift"; sourceTree = "<group>"; };
 		8DBCE3292993F48200A48CB7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		8DBCE32C2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuplementaryViewsIdentifiers.swift; sourceTree = "<group>"; };
 		8DBCE330299506E300A48CB7 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				8D5B8D0D299171600060E3DB /* DealsCompositionalLayout.swift */,
 				8DBCE330299506E300A48CB7 /* CALayer+Extension.swift */,
 				8DBCE3322995093100A48CB7 /* FontSize.swift */,
+				8D7D1E002996A870007F4BA2 /* Deal+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				8DBCE32D2993F7DB00A48CB7 /* SuplementaryViewsIdentifiers.swift in Sources */,
 				151E70572940D970000F9ED0 /* AppDelegate.swift in Sources */,
 				8D5B8D10299173500060E3DB /* DealsCell.swift in Sources */,
+				8D7D1E012996A870007F4BA2 /* Deal+Extension.swift in Sources */,
 				151E706B2940D98C000F9ED0 /* Server.swift in Sources */,
 				8D5B8D0E299171600060E3DB /* DealsCompositionalLayout.swift in Sources */,
 				8D5B8D08299060BB0060E3DB /* DealsView.swift in Sources */,

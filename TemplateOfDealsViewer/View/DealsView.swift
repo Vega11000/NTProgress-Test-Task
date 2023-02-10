@@ -7,17 +7,57 @@
 
 import UIKit
 
-protocol DealsViewDelegate: AnyObject {}
-
 final class DealsView: UIView {
     
-    weak var viewDelegate: DealsViewDelegate?
     var dealsList: [Deal] = []
+    private var upDeals = false
+    private var sortFieldState: SortFields?
+    
+    private enum SortFields: String, CaseIterable {
+        case instrument = "Instrument"
+        case price = "Price"
+        case amount = "Amount"
+        case side = "Side"
+    }
     
     let collectionView = UICollectionView(
         frame: .zero,
         collectionViewLayout: DealsCompositionalLayout.generateLayout()
     )
+    
+    lazy var upDownDealsBarButton: UIBarButtonItem = {
+        let button = UIBarButtonItem()
+        button.primaryAction = UIAction { [weak self] _ in if let self {
+            self.upDeals.toggle()
+            button.image = self.upDeals ?
+            UIImage(systemName: "arrowtriangle.up.fill") :
+            UIImage(systemName: "arrowtriangle.down.fill")
+            self.sortDealsList()
+        }
+        }
+        button.image = UIImage(systemName: "arrowtriangle.down.fill")
+        return button
+    }()
+    
+    private lazy var sortMenu: UIMenu = {
+        let sortActions = SortFields.allCases.map { field in
+            return UIAction(title: field.rawValue) { _ in
+                self.sortFieldState = field
+                self.sortDealsList()
+            }
+        }
+        let devider = UIMenu(title: "Sort By", options: .displayInline, children: sortActions)
+        let items = [devider]
+        let menu = UIMenu(children: items)
+        return menu
+    }()
+    
+    lazy var sortBarButton: UIBarButtonItem = {
+        let barItem = UIBarButtonItem()
+        barItem.menu = sortMenu
+        barItem.title = "Sort by"
+        return barItem
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -67,6 +107,33 @@ extension DealsView: UICollectionViewDataSource {
 }
 
 private extension DealsView {
+    func sortDealsList() {
+        switch sortFieldState {
+        case .instrument:
+            sortBarButton.title = SortFields.instrument.rawValue
+            dealsList.sort { $0.instrumentName < $1.instrumentName }
+        case .price:
+            sortBarButton.title = SortFields.price.rawValue
+            dealsList.sort { $0.price < $1.price }
+        case .amount:
+            sortBarButton.title = SortFields.amount.rawValue
+            dealsList.sort { $0.amount < $1.amount }
+        case .side:
+            sortBarButton.title = SortFields.side.rawValue
+            dealsList.sort { $0.sideSortOrder < $1.sideSortOrder }
+        case .none:
+            if upDeals {
+                break
+            }
+            dealsList.reverse()
+        }
+        
+        if upDeals {
+            dealsList.reverse()
+        }
+        
+        collectionView.reloadData()
+    }
     
     func configureRefreshControl () {
         collectionView.refreshControl = UIRefreshControl()
@@ -77,7 +144,7 @@ private extension DealsView {
     func handleRefreshControl() {
         DispatchQueue.main.async { [self] in
             collectionView.refreshControl?.endRefreshing()
-            collectionView.reloadData()
+            sortDealsList()
         }
     }
     
